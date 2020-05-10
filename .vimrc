@@ -6,5 +6,6 @@ set number
 set mouse=r
 syntax on 
 set visualbell
-set t_vb=
-set color desert
+set background=dark
+colorscheme solarized
+let g:solarized_termtrans=1
