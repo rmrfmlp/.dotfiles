@@ -1,13 +1,13 @@
 # .dotfiles
 configs and scripts
 
-https://github.com/dunstontc/vim-vscode-theme
-https://github.com/eemed/sitruuna.vim
-https://github.com/arzg/vim-colors-xcode
-https://github.com/mr-ubik/vim-hackerman-syntax
-https://github.com/sainnhe/forest-night
-
-sudo curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+https://github.com/dunstontc/vim-vscode-theme  
+https://github.com/eemed/sitruuna.vim  
+https://github.com/arzg/vim-colors-xcode  
+https://github.com/mr-ubik/vim-hackerman-syntax  
+https://github.com/sainnhe/forest-night  
+  
+sudo curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim  
 
 touch .vimrc
 if filereadable(expand("~/.vimrc.plug"))
