@@ -4,3 +4,8 @@
 function mkcd() {
 	mkdir -p "$@" && cd "$_";
 }
+
+# Git clone and enter directory
+function gccd() {
+	git clone "$@" && cd "$_";
+}
