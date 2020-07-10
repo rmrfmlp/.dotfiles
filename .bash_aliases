@@ -1,6 +1,6 @@
 #wm specific
-alias wmproxy='ssh -i .ssh/izzo -N -D 5001 b0g00a0@192.168.17.22''
-
+alias wmproxy='ssh -i .ssh/izzo -N -D 5001 b0g00a0@192.168.17.22'
+alias sudo='sudo '
 alias gdi='sudo !!'
 alias ccc='sudo rm ~/.ssh/known_hosts'
 alias check="curl ipinfo.io | egrep 'region' --color=always -z"
