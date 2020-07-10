@@ -3,7 +3,7 @@ alias wmproxy='ssh -i .ssh/izzo -N -D 5001 b0g00a0@192.168.17.22''
 
 alias gdi='sudo !!'
 alias ccc='sudo rm ~/.ssh/known_hosts'
-alias myip="curl ipinfo.io | egrep 'region' --color=always -z"
+alias check="curl ipinfo.io | egrep 'region' --color=always -z"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias scan='netdiscover -i eth0 -r 192.168.17.0/24'
