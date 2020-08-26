@@ -1,5 +1,5 @@
 #wm specific
-alias wmproxy='ssh -i .ssh/izzo -N -D 5001 b0g00a0@192.168.17.22'
+alias wmproxy='ssh -i .ssh/izzo -N -D 5001 b0g00a0@192.168.1.3'
 alias sudo='sudo '
 alias gdi='sudo !!'
 alias ccc='sudo rm ~/.ssh/known_hosts'
@@ -32,7 +32,6 @@ alias mnt="mount | awk -F' ' '{ printf \"%s\t%s\n\",\$1,\$3; }' | column -t | eg
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias grep='grep --color=auto'
-alias l='ls -CF'
-alias la='ls -A'
-alias ll='ls -al'
-alias ls='ls -AlhF --color=auto'
+alias ls='ls --color=auto'
+alias la='ls -A --color=auto'
+alias l='ls -AlhF --color=auto'
