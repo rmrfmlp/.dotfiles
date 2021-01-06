@@ -1,5 +1,5 @@
 #wm specific
-alias wmproxy='ssh -i .ssh/izzo -N -D 5001 b0g00a0@192.168.1.6'
+alias wmproxy='sudo sshuttle -v --dns -NHr b0g00a0@192.168.1.107 -x 192.168.1.107 0/0'
 alias sudo='sudo '
 alias gdi='sudo !!'
 alias ccc='sudo rm ~/.ssh/known_hosts'
