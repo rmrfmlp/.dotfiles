@@ -1,13 +1,14 @@
 #wm specific
-alias wmproxy='sudo sshuttle -v --dns -NHr b0g00a0@192.168.1.107 -x 192.168.1.107 0/0'
+alias wmproxy='ssh -i .ssh/izzo -N -D 5001 b0g00a0@192.168.1.107'
+alias wmvpn='sshuttle -v --dns -NHr b0g00a0@192.168.1.107 -x 192.168.1.107 0/0'
 alias sudo='sudo '
 alias gdi='sudo !!'
 alias ccc='sudo rm ~/.ssh/known_hosts'
-alias check="curl ipinfo.io | egrep 'region' --color=always -z"
+alias whatismyip="curl ipinfo.io | egrep 'region' --color=always -z"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias scan='netdiscover -i eth0 -r 192.168.17.0/24'
-alias hh='echo IP:$(hostname -I) && sudo python3 -m http.server 80'
+alias hh='echo IP:$(hostname -I) && sudo python3 -m http.server 81'
 alias zipdir='sudo 7z a zipped.7z *'
 alias untar='tar -zxvf '
 alias cd..='cd ..'
@@ -21,6 +22,7 @@ alias ports='sudo netstat -tulanp'
 alias oh='sudo xdg-open .'
 alias gh='history|grep'
 alias change2www='sudo chown -R www-data:www-data .'
+alias check='python3 /opt/checker.py'
 
 #sort by file size
 alias lt='ls --human-readable --size -1 -S --classify'
