@@ -156,3 +156,5 @@ alias egrep='egrep --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+
+export PS1="\[\033[38;5;32m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;32m\]\h\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;32m\][\[$(tput sgr0)\]\w\[$(tput sgr0)\]\[\033[38;5;32m\]]\[$(tput sgr0)\]: \[$(tput sgr0)\]"
