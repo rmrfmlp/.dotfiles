@@ -76,26 +76,7 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    #alias grep='grep --color=auto'
-    #alias fgrep='fgrep --color=auto'
-    #alias egrep='egrep --color=auto'
 fi
-
-# colored GCC warnings and errors
-#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-#alias ll='ls -l'
-#alias la='ls -A'
-#alias l='ls -CF'
-
-# Alias definitions.
-# You may want to put all your additions into a separate file like
-# ~/.bash_aliases, instead of adding them here directly.
-# See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
@@ -113,19 +94,10 @@ if ! shopt -oq posix; then
 fi
 export PATH=$PATH:/snap/bin
 #wm specific
-alias wmproxy='ssh -i .ssh/izzo -N -D 5001 b0g00a0@10.0.0.58'
-alias wmvpn='sshuttle -v --dns -NHr b0g00a0@192.168.1.107 -x 192.168.1.107 0/0'
-alias sudo='sudo '
-alias gdi='sudo !!'
 alias ccc='sudo rm ~/.ssh/known_hosts'
 alias whatismyip="curl ipinfo.io | egrep 'region' --color=always -z"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
-alias scan='netdiscover -i eth0 -r 192.168.17.0/24'
-alias hh='echo IP:$(hostname -I) && sudo python3 /home/carl/custom/hh.py'
-bind '"\e[24~":"hh\n"'
-alias zipdir='sudo 7z a zipped.7z *'
-alias untar='tar -zxvf '
 alias cd..='cd ..'
 alias ..='cd ..'
 alias ...='cd ../../../'
@@ -135,12 +107,7 @@ alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
 alias ports='sudo netstat -tulanp'
 alias oh='sudo xdg-open .'
-alias gh='history|grep'
 alias change2www='sudo chown -R www-data:www-data .'
-alias check='python3 /opt/checker.py'
-alias dim='identify -format "%w %h"'
-
-#sort by file size
 alias lt='ls --human-readable --size -1 -S --classify'
 
 #show mounted drives cleanly
