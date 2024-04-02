@@ -1,0 +1,4 @@
+#save in home dir as .sessionrc, this will fix xrdp in Ubuntu 20/22.04 being messed up when RDP'ing in from another box
+export GNOME_SHELL_SESSION_MODE=ubuntu
+export XDG_CURRENT_DESKTOP=ubuntu:GNOME
+export XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
