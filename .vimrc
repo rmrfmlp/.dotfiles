@@ -1,8 +1,9 @@
-set tabstop=2 
-set shiftwidth=2 
-set softtabstop=2 
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set expandtab
 set number
 set mouse=r
-syntax on 
+syntax on
 set visualbell
+nnoremap <C-p> :set paste!<CR>:set paste?<CR>
